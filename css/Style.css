@@ -1,0 +1,605 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif
+}
+
+
+.base {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.base2 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f6f0e4;
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo {
+  width: 250px;
+  background-attachment: fixed;
+
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+
+}
+
+.content {
+  margin-top: 10%;
+  max-width: 600px;
+
+}
+
+.content h1 {
+  font-size: 60px;
+  color: #222;
+}
+
+.content p {
+  margin: 10px 0 30px;
+  color: #333;
+
+}
+
+.aboutus {
+  width: 530px;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+
+
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #79AC78;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #D0E7D2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  position: unset;
+  left: 30;
+  right: 0;
+  bottom: 0;
+  margin-top: 100px;
+  margin-bottom: auto;
+  width: 100%;
+  height: 30px;
+  color: #739072;
+  padding-bottom: auto;
+  padding-top: auto;
+  text-align: left;
+}
+
+
+
+
+.top-bar {
+
+  padding: 10px;
+  text-align: left;
+}
+
+.sign-in-button,
+.sign-up-button {
+  padding: 10px 20px;
+  background-color: #e0bb53;
+  color: #010000;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-style: groove
+}
+
+.form {
+
+  max-width: 400px;
+  margin: left;
+
+}
+
+.label {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+}
+
+input[type="text"],
+
+input[type="number"],
+
+input[type="email"],
+
+.textarea {
+
+  width: 100%;
+
+  padding: 8px;
+
+  margin-bottom: 10px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+}
+
+input[type="submit"] {
+
+  background-color: #4f6f52;
+
+  color: white;
+
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+
+  background-color: #79AC78;
+
+}
+
+.icons {
+  display: block;
+  text-align: left;
+  padding: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+.form {
+  max-width: 700px;
+  width: 100%;
+  padding: 25px 25px;
+  border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #333;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: initial;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #333;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+
+.product {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  border: 1px sold #ccc;
+  transition: transform 0.3s ease;
+  /* Smooth transition on hover */
+  cursor: pointer;
+}
+
+.product:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.1);
+  /* Enlarge the image on hover */
+
+  border: #333;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.product:hover .product-info {
+  opacity: 1;
+  /* Show info on hover */
+}
+
+
+/* CSS styles for product information overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product_info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.cancel-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+/* CSS styles for hover effect */
+.product:hover img {
+  border: 2px solid #4f6f52;
+  box-shadow: 0 0 5px #4f6f52(255, 127, 80, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*form.php*/
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #4f6f52;
+  margin-right: 10px;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+}
+
+
+
+
+/*shopping card */
+
+.container {
+
+  margin: auto;
+  transition: 0.5s;
+  }
+  
+  header {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  margin-top: 50px;
+  }
+  
+  header .shopping {
+  position: relative;
+  text-align: right;
+  }
+  
+  header .shopping img {
+  width: 40px;
+  }
+  
+  header .shopping span {
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  padding: 3px 10px;
+  }
+  
+  .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 50px;
+  }
+  
+  .list .item {
+  text-align: center;
+
+  padding: 20px;
+  
+  letter-spacing: 1px;
+  
+  }
+  
+  .list .item img {
+  width: 350px;
+  height: 430px;
+  object-fit: cover;
+  }
+  
+  .list .item img:hover {
+  border: 2px solid #4f6f52;
+  box-shadow: 0 0 5px #4f6f52(255, 127, 80, 0.7);
+  opacity: 1;
+  
+  transform: scale(1.1);
+  
+  }
+  
+  .list .item .title {
+  font-weight: 600;
+  }
+  
+  .list .item .price {
+  margin: 5px;
+  }
+  
+  .list .item button {
+  background-color: #1C1F25;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  }
+  
+  .card {
+  position: fixed;
+  top: 200px;
+  /* right: 100; /
+  / bottom: 100%; */
+  border-color: #1C1F25;
+  left: 100%;
+  width: 35%;
+  border-radius: 5px;
+  margin-left: 15px;
+  background-color: #faf4e2;
+  height: 70%;
+  transition: 0.5s;
+  
+  }
+  
+  .active .card {
+  left: calc(100% - 500px);
+  }
+  
+  .active .container {
+  transform: translateX(-200px);
+  }
+  
+  .card h1 {
+  color: #79AC78;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  }
+  
+  .card .checkOut {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+  }
+  
+  .card .checkOut div {
+  background-color: #79AC78;
+  width: 120%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  }
+  
+  .card .checkOut div:nth-child(2) {
+  background-color: #1C1F25;
+  color: #fff;
+  }
+  
+  .listCard li {
+  display: grid;
+  grid-template-columns: 80px repeat(3, 1fr);
+  color: #4f6f52;
+  row-gap: 10px;
+  }
+  
+  .listCard li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .listCard li img {
+  width: 90%;
+  
+  }
+  
+  .listCard li button {
+  background-color: #4f6f52;
+  border: none;
+  }
+  
+  .listCard .count {
+  margin: auto;
+  padding: auto;
+  }
+
+
